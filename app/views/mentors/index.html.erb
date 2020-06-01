@@ -1,11 +1,18 @@
 <%= link_to "Sign Up", new_user_registration_path  %>
 <%= link_to "Log In", new_user_session_path  %>
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete  %>
 <br>
 <br>
 <% @mentors.each do |mentor| %>
 <strong> <%= mentor.name %> </strong>
+<br>
 <%= mentor.bio %>
+<br>
 <%= link_to "Edit Mentor", edit_mentor_path(mentor) %>
 <%= link_to "Show Mentor", mentor_path(mentor)  %>
+<br>
+<br>
 <% end %>
+<br>
+<br>
 <%= link_to "Add a New Mentor", new_mentor_path %>
