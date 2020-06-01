@@ -35,12 +35,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'webpacker'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
-
 gem 'autoprefixer-rails'
+gem 'bookable'
+gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'devise'
 
 
 group :development, :test do
