@@ -1,5 +1,5 @@
 <% @mentors.each do |mentor| %>
-<%= mentor.name %>
+<strong> <%= mentor.name %> </strong>
 <%= mentor.bio %>
 <%= link_to "Edit Mentor", edit_mentor_path(mentor) %>
 <%= link_to "Show Mentor", mentor_path(mentor)  %>
