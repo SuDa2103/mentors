@@ -1,0 +1,7 @@
+<% @mentors.each do |mentor| %>
+<%= mentor.name %>
+<%= mentor.bio %>
+<%= link_to "Edit Mentor", edit_mentor_path(mentor) %>
+<%= link_to "Show Mentor", mentor_path(mentor)  %>
+<% end %>
+<%= link_to "Add a New Mentor", new_mentor_path %>
